@@ -57,6 +57,10 @@ MIDDLEWARE += [
     'querycount.middleware.QueryCountMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "https://yourfrontenddomain.com",
+]
+
 ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
