@@ -15,10 +15,6 @@ DEBUG = config('DEBUG')
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://booksphererailway-production.up.railway.app/'
-]
-
 
 
 INSTALLED_APPS = [
@@ -55,10 +51,6 @@ MIDDLEWARE = [
 
 MIDDLEWARE += [
     'querycount.middleware.QueryCountMiddleware',
-]
-
-CORS_ALLOWED_ORIGINS = [
-    "https://yourfrontenddomain.com",
 ]
 
 ROOT_URLCONF = 'core.urls'
